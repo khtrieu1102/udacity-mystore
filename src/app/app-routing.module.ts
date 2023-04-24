@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'products/:id',
     component: ProductItemDetailComponent,
   },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
 
 @NgModule({

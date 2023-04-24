@@ -39,8 +39,8 @@ export class ProductItemDetailComponent implements OnInit {
     });
   }
 
-  onChangeCounter(event: any) {
-    this.product.counter = Number(event.target.value);
+  onChangeCounter(updatingCouter: string) {
+    this.product.counter = Number(updatingCouter);
   }
 
   onAddToCart() {

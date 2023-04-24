@@ -3,7 +3,7 @@
     <div class="detail-item">
         <p class="header">{{ this.product.name }}</p>
         <p>$ {{ this.product.price }}</p>
-        <select class="select-input" (change)="onChangeCounter($event)" value="{{this.product.counter}}" [ngModel]="this.product.counter">
+        <select class="select-input" (ngModelChange)="onChangeCounter($event)" value="{{this.product.counter}}" [ngModel]="this.product.counter">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
