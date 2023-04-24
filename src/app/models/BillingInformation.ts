@@ -1,0 +1,13 @@
+export class BillingInformation {
+  fullname: string;
+  address: string;
+  creditCardNumber: string;
+  total: number;
+
+  constructor() {
+    this.fullname = '';
+    this.address = '';
+    this.creditCardNumber = '';
+    this.total = 0;
+  }
+}
